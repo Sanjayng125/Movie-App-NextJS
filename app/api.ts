@@ -50,13 +50,13 @@ export const getTopRated = async () => {
     }
 };
 
-export const getUpcoming = async () => {
+export const getNowPlaying = async () => {
     noStore()
     try {
-        const res = await fetch(`${baseUrl}/movie/upcoming?api_key=${apiKey}`);
+        const res = await fetch(`${baseUrl}/movie/now_playing?api_key=${apiKey}`);
         const data = await res.json();
         const movies = await data?.results;
-        return movies;
+        return movies.splice(10, data?.results.length);
     } catch (error) {
         console.log(error);
         return null;

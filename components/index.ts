@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import NavbarItem from "./NavbarItem";
 import Results from "./Results";
 import SearchBar from "./SearchBar";
+import NowPlaying from "./NowPlaying";
 
 export {
     Card,
@@ -15,5 +16,6 @@ export {
     Navbar,
     NavbarItem,
     Results,
-    SearchBar
+    SearchBar,
+    NowPlaying
 }

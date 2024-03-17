@@ -59,7 +59,7 @@ const NowPlaying = ({ movies }: { movies: Movie[] }) => {
                   className="relative w-full h-full"
                   priority
                 />
-                <h2 className="absolute bottom-3 font-semibold text-lg flex justify-between px-4 w-full">
+                <h2 className="absolute text-white bottom-3 font-semibold text-base flex justify-between px-4 w-full">
                   <span>{movie?.title || movie?.name}</span>
                   <span className="flex gap-2 items-center">
                     <AiFillHeart className="text-red-500" /> {movie?.vote_count}

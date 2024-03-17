@@ -32,8 +32,10 @@ const PersonPage = ({ params }: { params: { id: string } }) => {
   };
 
   useEffect(() => {
-    fetchPersonData();
-    fetchPersonMovies();
+    if (person_id) {
+      fetchPersonData();
+      fetchPersonMovies();
+    }
   }, [person_id]);
 
   return (
